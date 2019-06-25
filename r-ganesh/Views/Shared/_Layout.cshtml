@@ -21,30 +21,28 @@
 </head>
 <body>
     <br /><br /><br />
-                <div style="color:aqua">
-                    <div class="navbar navbar-inverse navbar-fixed-top">
-                        <div class="container">
-                            <div class="navbar-header">
-                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                    <span class="icon-bar"></span>
-                                </button>
-                                @Html.ActionLink("R-Ganesh", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-                            </div>
-                            <div class="navbar-collapse collapse">
-                                <ul class="nav navbar-nav">
-                                    <li>@Html.ActionLink("Qui Suis-Je ?", "Index", "QuiSuisJe")</li>
-                                    <li>@Html.ActionLink("Mes Expériences", "Index", "Experiences")</li>
-                                    <li>@Html.ActionLink("Mes Projets", "Index", "Projets")</li>
-                                    <li>@Html.ActionLink("Mes Fiches E4/E6", "Index", "MesFiches")</li>
-                                    <li>@Html.ActionLink("Ma Veille Technologique", "Index", "VeilleTechno")</li>
-                                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="color:#0094ff !important">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                @Html.ActionLink("R-Ganesh", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Qui Suis-Je ?", "Index", "QuiSuisJe")</li>
+                    <li>@Html.ActionLink("Mes Expériences", "Index", "Experiences")</li>
+                    <li>@Html.ActionLink("Mes Projets", "Index", "Projets")</li>
+                    <li>@Html.ActionLink("Mes Fiches E4/E6", "Index", "MesFiches")</li>
+                    <li>@Html.ActionLink("Ma Veille Technologique", "Index", "VeilleTechno")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                </ul>
+            </div>
+        </div>
+    </div>
     <div class="container body-content">
         @RenderBody()
         <hr />
